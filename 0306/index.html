@@ -1,8 +1,81 @@
 <html>
 <head>
+    <script src="https://juxinglong.github.io/static/iframe-resizer/iframeResizer.contentWindow.min.js"></script>
     <title>MIS 3033 March 6/7</title>
     <link rel="icon" href="head1.png"/>
+
+    <style>
+        #main {
+            width: 600px;
+            height: 400px;
+            background-color: lightblue;
+            margin-left: auto; /*this will make it centered*/
+            margin-right: auto;
+
+            /*this will make the boxes display on the same row*/
+            /*display: flex;
+            flex-direction: row;*/ /*main direction*/
+            /*justify-content: center;*/ /*horizontally centered, move boxes to center of row*/ /*you can also move it to "right" or "left"*/
+            /*align-items: center;*/ /*vertically centered*/ /*you can also move it to "end" (bottom) or "start" (top)*/
+
+            /*this will make the boxes display on the same column*/
+            display: flex;
+            flex-direction: column; /*opposite to row*/
+            justify-content: center; /*vertical movement*/
+            align-items: end; /*horizontal movement*/
+        }
+
+        .style1 
+        {
+            width:100%;
+            height:100px;
+            background-color:mediumpurple;
+            margin:10px;
+        }
+
+        #h1 
+        {
+            background-color:forestgreen;
+            width:200px;
+            height:100%;
+
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+        }
+
+        #h2
+        {
+            background-color:red;
+            width:300px;
+            height:50px;
+        }
+
+        #head
+        {
+            display:flex;
+            flex-direction:row;
+        }
+    </style>
 </head>
+
+<body>
+    <div id="main" style="">
+
+        <div id="head" class="style1">
+            <div id="h1">
+                <img src="head1.png" style="height:100%" />
+            </div>
+            <div id="h2"></div>
+        </div>
+
+        <div class="style1"></div>
+        <div class="style1"></div>
+        <div class="style1"></div>
+
+    </div>
+
+</body>
 
 <div style="background-color:lightblue;">
 
