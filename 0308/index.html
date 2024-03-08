@@ -15,6 +15,7 @@
             margin:20px;
             margin-left:auto;
             margin-right:auto;
+            position: relative;
         }
         #div1
         {
@@ -22,6 +23,9 @@
             height:100px;
             background-color:lightcoral;
             margin-bottom:10px;
+            position:fixed;
+            bottom: 0px; /*always will show at bottom since fixed*/
+            z-index:99; /*this will allow div1 to be the top layer (for div3 and div4 since those were the only ones that it couldnt overlayer)*/
 
         }
         #div2 
@@ -30,6 +34,8 @@
             height: 100px;
             background-color: lightgoldenrodyellow;
             margin-bottom: 10px;
+            position:relative; /*static is default location; relative to static location*/
+            left:-50px; /*move to left*/
         }
         #div3 
         {
@@ -37,6 +43,8 @@
             height: 100px;
             background-color: lightgray;
             margin-bottom: 10px;
+            position:absolute; /*finds parent that is non-static*/
+            bottom:5px;
         }
         #div4 
         {
@@ -44,6 +52,8 @@
             height: 100px;
             background-color: darkolivegreen;
             margin-bottom: 10px;
+            position:sticky;
+            top:0px;
         }
         #div5 
         {
@@ -59,9 +69,61 @@
             background-color: lightsalmon;
             margin-bottom: 10px;
         }
+
+        .sp1 /*define style class*/ {
+            width: 100px;
+            height: 100px;
+            background-color: forestgreen;
+            margin: 10px;
+            display: inline; /*by default; biggest diff between span and div. 
+                if changed to block, it will act like div. 
+                if changed to inline-block, it will change to block size but remain on same row
+            */
+        }
+
+        .dv1 
+        {
+            width: 100px;
+            height: 100px;
+            background-color: forestgreen;
+            margin: 10px;
+            display:block; /*by default*/
+        }
+
+        #foot
+        {
+            height:100px;
+            background-color:gray;
+            display: flex;
+            flex-direction:row;
+            align-items:center;
+        }
     </style>
 </head>
 <body>
+    <div id="foot">
+        <div id="f1">
+            <img src="head1.png" style="height:50px;" />
+        </div>
+
+        <div id="f2">
+            Management Information Systems
+            307 W. Brooks, Adams Hall, Room 3230
+            Norman, Oklahoma 73019
+            (405) 325-5721
+        </div>
+
+        <div id="f3"></div>
+    </div>
+
+    <span class="sp1">span1</span>
+    <span class="sp1">span2</span>
+    <span class="sp1">span3</span>
+
+    <div class="dv1">div1</div>
+    <div class="dv1">div2</div>
+    <div class="dv1">div3</div>
+
     <div id="main">
         <div id="div1">div1</div>
         <div id="div2">div2</div>
