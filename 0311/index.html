@@ -23,6 +23,82 @@
 </head>
 
 <body>
+
+    <script> /*anything inside this is now javascript*/
+        // HTML CSS (not a programming language; a tag language)
+        // JavaScript (a programming lang); new topic
+        // BScript
+        // LiveScript => ()
+        // Java and JavaScript
+        // not type safe lang (not strict)
+        // JavaScript does a lot of things like C#
+        // JavaScript popular
+        // rule to javascript
+        //
+        // s1
+        'use strict'; // we use this to write javascript
+
+        // define variables (3 ways)
+        { //walls, block, small, world
+            const age1=20; // variable is age1; datatype: undefined, flexible
+            let age2; // local variable (can only be used inside curly brackets)
+            var v1; // global varible (can use it anywhere in this code)
+
+            age2 = 20;
+            age2 = 128.8;
+            age2 = 'tom';
+            age2 = '';
+
+            let name = "tom";
+            let age = 20;
+
+
+            let str = `The name is ${name}. The age is ${age}`;
+            console.log(str);
+            alert(str);
+
+            let stu; // undefined
+            // object, dictionary:
+            stu =
+            {
+                name: "Tom",
+                age : 20,
+                grade: 96.6,
+            }
+            console.log(stu.grade)
+
+            let arr1; // local undefined
+            arr1 = ["Tom", "Jack"];
+            console.log(arr1.length);
+            console.log(arr1[1]);
+
+            // define functions
+            // one way: no let allowed
+            function func1(p1, p2)
+            {
+                return p1 + p2; // return is not mandatory
+            }
+
+            // second way: arrow function
+            // semi-colon is not required 
+            let func2 = (p1, p2) =>
+            {
+                return p1 * p2;
+            }
+
+            console.log(func1(2.3, 3.0));
+            console.log(func2(2.3, 3.0));
+
+
+        }
+    </script>
+
+    <script>
+        //s2
+        "use strict"
+        {// age2=20; cant use because age2 already used even though it id
+        }
+    </script>
     <div id="div1"></div>
     <img id="img1" src="head1.png"/>
     <img id="img2" src="b.svg"/>
