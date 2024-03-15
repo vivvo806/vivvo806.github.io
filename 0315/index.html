@@ -33,6 +33,28 @@
 </head>
 
 <body>
+    <div id="d"></div>
+
+    <script>
+        "use strict";
+        let d = document.querySelector("#d");
+        d.style.backgroundColor = "lightblue";
+        d.innerHTML = document.body.innerHTML;
+    </script>
+    <script>
+        "use strict";
+        var g1; //global: can use anything only inside the webpage
+        g1 = 20;
+        let stu; // stu undefined; let defines variables
+        stu =
+        { //define object
+            id: "S101",
+            name: "Tom",
+            age: 19,
+            grade: 96.6,
+        };
+        console.log(stu.grade); // prints in console of website
+    </script>
     <img id="img1" src="static/head1.png" style="height:200px;"/>
     <img id="img2" src="static/a.svg" style="height:200px;"/>
     <img id="img3" src="static/b.svg" style="height:200px;"/>
