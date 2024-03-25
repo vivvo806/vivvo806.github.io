@@ -49,9 +49,48 @@
             margin-left:10px;
         }
     </style>
+
+    <link href="site.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div id="d1"></div>
+    <div id="d3"></div>
+    <br/>
+    <button id="b3" class="btn btn-danger">Load Excuse</button> <!--danger = red button-->
+
+    <script>
+        "use strict";
+
+        let b3 = document.querySelector("#b3");
+        b3.addEventListener("click", loade); // call to get new excuse
+
+        let R = null; // global variable
+        let url = `https://excuser-three.vercel.app/v1/excuse/college/`;
+
+        // fetch func is async function
+        // sync means the computer will read the code one by one in order
+        // async means the computer will read the next line immediately before the line before it is done
+
+        async function loade()
+        {
+            let r = await fetch(url); // by putting await you basically turn it into sync
+            let rj = await r.json();
+
+            document.querySelector("#d3"); // div 3 bc we called it on line 56
+            d3.innerHTML= rj[0].excuse; // string
+
+            // R = rj;
+            // console.log(rj);
+            
+        }
+
+        loade();
+
+    </script>
+
+    <div class="div1"></div>
+
+    <div id="d1" style="color:red; font-size:20px;"></div>
 
     <button id="b1" class="btn btn-warning btn-lg"> <!--warning = yellow button; lg = large button-->
         <i class="bi bi-cloud-arrow-down"></i>
