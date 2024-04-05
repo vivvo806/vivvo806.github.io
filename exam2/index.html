@@ -1,16 +1,114 @@
 <html>
 <head>
-    <title>MIS 3033 Exam 2 Spring 2024 [Exam Code] Vivian Vo</title>
+    <title>MIS 3033 Exam 2 Spring 2024 [USQW] Vivian Vo</title>
     <link rel="icon" href="static/img/head1.png"/>
     <link rel="stylesheet" href="static/site.css"/>
 
     <style>
+        #main 
+        {
+            width:1000px;
+            margin-right:auto;
+            margin-left:auto;
+        }
 
+        #header 
+        {
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            /*margin:auto;*/
+            font-size:30pt;
+            color:dodgerblue;
+            text-transform:uppercase;
+            font-weight:bold;
+        }
+
+        #content1 {
+            display: flex;
+            flex-direction: row;
+        }
+        #right {
+            width:480px;
+
+        }
+        #left {
+            width: 480px;
+            color: dodgerblue;
+            font-size: 20pt;
+            font-weight: bold;
+            border: 2px solid darkgray;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #updiv{
+            border:2px solid darkgray;
+            border-radius: 10px;
+        }
+        #downdiv {
+            border: 2px solid darkgray;
+            border-radius: 10px;
+        }
+        #footer {
+            background-color: aliceblue;
+            color: darkgray;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height:50px;
+        }
     </style>
 </head>
 
 <body>
-    [Exam Code] 
+    <div id="main">
+        <div id="header" style="height:100px">
+            I LOVE PROGRAMMING!
+            <img src="static/img/a.svg"/>
+        </div>
+        <div id="content1">
+            <div id="left">
+                I love MIS3033
+                <img src="static/img/b.svg" style="width:400px;" />
+            </div>
+
+            <div id="right">
+                <div id="updiv" style="font-size: 20px; background-color: lightblue; font-weight:bold; border-radius: 5px;">
+                    What I already learned:
+                    <div>
+                        <ul>
+                            <li>C#</li>
+                            <li>C# Entity Framework</li>
+                            <li>Database Sqlite</li>
+                            <li>HTML &Aacute; CSS</li>
+                        </ul>
+                    </div> 
+                </div>
+                <div id="downdiv"  style="font-size: 20px; font-weight:bold; border-radius: 5px;">
+                    What I am going to learn next:
+                    <div>
+                        <ol>
+                            <li>JavaScript</li>
+                            <li>BootStrap</li>
+                            <li>ASP.NET MVC</li>
+                            <li>Web REST API</li>
+                        </ol>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            Designed and Developed by Vivian Vo for MIS 3033 Exam 2
+        </div>
+    </div>
+    
+    <!--[USQW] 
     <img src="static/img/a.svg"style="height:50px;"/>
     <img src="static/img/b.svg"style="height:50px;"/>
     <img src="static/img/css.svg"style="height:50px;"/>
@@ -20,7 +118,7 @@
     <img src="static/img/javascript.svg"style="height:50px;"/>
     <img src="static/img/linkedin.png"style="height:50px;"/>
     <img src="static/img/logo.svg"style="height:50px;"/>
-    <img src="static/img/sqlite.svg"style="height:50px;"/>
+    <img src="static/img/sqlite.svg"style="height:50px;"/>-->
 
 </body>
 </html>
